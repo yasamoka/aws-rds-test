@@ -1,0 +1,18 @@
+[package]
+name = "test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenvy = "0.15.7"
+rustls = "0.23.5"
+rustls-pemfile = "2.1.2"
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+tokio-postgres = "0.7.10"
+tokio-postgres-rustls = "0.12.0"
+
+[profile.release]
+opt-level = "z"
+strip = true

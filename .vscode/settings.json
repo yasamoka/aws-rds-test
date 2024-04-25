@@ -1,0 +1,10 @@
+{
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        }
+    },
+    "rust-analyzer.linkedProjects": [
+        "./test/Cargo.toml"
+    ]
+}
